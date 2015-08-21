@@ -1,0 +1,15 @@
+import java.util.InputMismatchException;
+import java.util.Scanner; 
+public class LeerNumeroEntero {
+     public static void main(String[] args){
+    	 Scanner scan=new Scanner(System.in);
+		  int n;
+		  try{
+			  System.out.println("Introduce un número entero: "); 
+			  n=scan.nextInt();  
+		  }catch(InputMismatchException e){
+			    System.out.println("Tiene que ingresar un valor entero");
+			    return;
+                 }
+		        System.out.println("Ha introducido el números " + n );
+		    }
